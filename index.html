@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cafetería Script</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-<h1>Simulador de historias</h1>
-<p>El usuario toma decisiones con consecuencias particulares dentro de la historia en cuestion, inspirada en el videojuego de rol "Baldur's Gate".</p>
+  <main class="contenedor">
+    
+    <a href=""><h1>Cafetería Script ☕</h1></a>
+    <section id="paso1">
+      <h2>1. Elegí tu bebida</h2>
+      <div class="opciones" id="opciones-bebida"></div>
+      <button id="btn-paso1">Siguiente</button>
+    </section>
+    <section id="paso2" style="display: none;">
+      <h2>2. Elegí tu comida salada</h2>
+      <div class="opciones" id="opciones-salado"></div>
+      <button id="btn-paso2">Siguiente</button>
+    </section>
+    <section id="paso3" style="display: none;">
+      <h2>3. Elegí tu comida dulce</h2>
+      <div class="opciones" id="opciones-dulce"></div>
+      <button id="btn-paso3">Ver resumen</button>
+    </section>
+<section id="resumen" style="display: none;">
+  <h2>Resumen de tu pedido</h2>
+  <div id="detalle-pedido"></div>
+  <p id="mensaje-final"></p>
+</section>
+  </main>
 </body>
 </html>

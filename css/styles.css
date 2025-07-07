@@ -1,3 +1,112 @@
-html {background-color: black;}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefaf5;
+  color: #3e2e2e;
+}
+a {text-decoration: none;}
 
-h1, p {color: white;}
+h1, h2 {
+  text-align: center;
+  color: #5a3e36;
+}
+
+main.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #fffaf2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.opciones button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #d8c3a5;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #5a3e36;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.opciones button:hover {
+  background-color: #d8c3a5;
+  color: #fff;
+}
+
+button[id^="btn-paso"] {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #8e735b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[id^="btn-paso"]:hover {
+  background-color: #a68c74;
+}
+
+#detalle-pedido {
+  background-color: #f4eee4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+#mensaje-final {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+  color: #6b4e40;
+}
+
+@media (max-width: 600px) {
+  .opciones {
+    gap: 0.7rem;
+  }
+
+  .opciones button {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+}
+
+.seleccionado {
+  background-color: #8e735b !important;
+  color: #fff !important;
+  border-color: #8e735b !important;
+}
+
+#btn-reiniciar {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #8e735b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#btn-reiniciar:hover {
+  background-color: #a68c74;
+}
