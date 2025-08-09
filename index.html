@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería Script</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería Script</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <main class="contenedor">
-    
     <a href=""><h1>Cafetería Script ☕</h1></a>
+
+    <div class="barra-busqueda">
+      <input id="buscador" type="search" placeholder="Buscar en la categoría..." autocomplete="off" />
+      <button id="btn-limpiar-busqueda" type="button">Limpiar</button>
+      <button id="btn-modo" type="button">Modo nocturno</button>
+    </div>
+
     <section id="paso1">
       <h2>1. Elegí tu bebida</h2>
       <div class="opciones" id="opciones-bebida"></div>
-      <button id="btn-paso1">Siguiente</button>
+      <button id="btn-paso2">Siguiente</button>
     </section>
+
     <section id="paso2" style="display: none;">
       <h2>2. Elegí tu comida salada</h2>
       <div class="opciones" id="opciones-salado"></div>
-      <button id="btn-paso2">Siguiente</button>
+      <button id="btn-paso2-step2">Siguiente</button>
     </section>
+
     <section id="paso3" style="display: none;">
       <h2>3. Elegí tu comida dulce</h2>
       <div class="opciones" id="opciones-dulce"></div>
       <button id="btn-paso3">Ver resumen</button>
     </section>
-<section id="resumen" style="display: none;">
-  <h2>Resumen de tu pedido</h2>
-  <div id="detalle-pedido"></div>
-  <p id="mensaje-final"></p>
-</section>
+
+    <section id="resumen" style="display: none;">
+      <h2>Resumen de tu pedido</h2>
+      <div id="detalle-pedido"></div>
+      <p id="mensaje-final"></p>
+
+      <form id="form-checkout" autocomplete="on">
+        <h3>Tus datos</h3>
+        <label>Nombre
+          <input id="nombre" name="nombre" required />
+        </label>
+        <label>Email
+          <input id="email" name="email" type="email" required />
+        </label>
+        <button id="btn-confirmar" type="submit">Confirmar pedido</button>
+      </form>
+
+      <button id="btn-reiniciar" style="display:none;">Hacer otro pedido</button>
+    </section>
   </main>
 </body>
 </html>

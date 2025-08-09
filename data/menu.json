@@ -1,0 +1,20 @@
+{
+  "bebidas": [
+    { "nombre": "Café con leche", "precio": 149 },
+    { "nombre": "Cappuccino", "precio": 169 },
+    { "nombre": "Cappuccino vegano", "precio": 189 },
+    { "nombre": "Chocolate caliente", "precio": 199 }
+  ],
+  "saladas": [
+    { "nombre": "Tostado", "precio": 219 },
+    { "nombre": "Tostada con palta", "precio": 249 },
+    { "nombre": "Scon de jamón crudo", "precio": 279 },
+    { "nombre": "Sorpresa del día", "precio": 229 }
+  ],
+  "dulces": [
+    { "nombre": "Magdalena", "precio": 120 },
+    { "nombre": "Cookie", "precio": 130 },
+    { "nombre": "Brownie", "precio": 150 },
+    { "nombre": "Torta de oro 18 kilates", "precio": 40000 }
+  ]
+}
